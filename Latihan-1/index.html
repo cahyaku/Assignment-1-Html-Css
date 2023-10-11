@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css" />
+    <!-- INI LINK UNTUK MENGHUBUNGKAN FILE CSS KE INDEX -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="icon" href="img /logo-sma-1-01.svg" />
     <title>SMA NEGERI 1 BATURITI</title>
+
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,37 +22,76 @@
 
   <body>
     <!-- HEADER -->
-    <header>
+    <header class="header">
       <a href="#">
-        <img class="sma-1-baturiti" alt="SMA logo" src="img /Logo-SMA.jpeg" />
+        <img class="logo" alt="SMA logo" src="img /logo-sma-1-01.svg" />
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li>Home</li>
-          <li>Profil</li>
-          <li>Guru</li>
-          <li>Siswa</li>
-          <li>Alumni</li>
-          <li>Fitur</li>
+          <li><a class="main-nav-link" href="#">Home</a></li>
+          <li><a class="main-nav-link" href="#">Profil</a></li>
+          <li><a class="main-nav-link" href="#">Guru</a></li>
+          <li><a class="main-nav-link" href="#">Siswa</a></li>
+          <li><a class="main-nav-link" href="#">Alumni</a></li>
+          <li><a class="main-nav-link nav-cta" href="#">Fitur</a></li>
         </ul>
       </nav>
     </header>
 
-    <!-- MAIN -->
     <main>
-      <section class="section-home">
+      <!-- SECTION-HOME -->
+      <!-- <section class="section-home">
         <div class="home">
           <div class="home-text-box">
-            <h1 class="heading-primary">Sma negeri 1 baturiti</h1>
+            <h1 class="head heading-primary">Sman 1 baturiti</h1>
             <p class="home-description">
               Br.Puseh, Ds.Perean, Baturiti,Tabanan-Bali<br />
               Email:sman1baturiti@gmail.com <br />
               Website: sman1Baturiti.sch.id
             </p>
+            <a href="#" class="btn btn--full">Login Member</a>
+            <a href="#" class="btn btn--outline">Info Sekolah</a>
+          </div>
+          <div class="home-img-box">
+            <img
+              src="img /sma-img-1.jpg"
+              class="home-img"
+              alt="Students SMA 1 Baturiti"
+            />
+          </div>
+        </div>
+      </section> -->
+
+      <section class="section-home">
+        <div class="home">
+          <div class="school">
+            <img
+              src="img /sma-image.png"
+              class="school-img"
+              alt="SMA 1 BATURITI"
+            />
+            <div class="home-text-box">
+              <h1 class="head heading-primary">Sman 1 baturiti</h1>
+              <p class="home-description">
+                Br.Puseh, Ds.Perean, Baturiti,Tabanan-Bali<br />
+                Email:sman1baturiti@gmail.com <br />
+                Website: sman1Baturiti.sch.id
+              </p>
+              <a href="#" class="btn btn--full">Login Member</a>
+              <a href="#" class="btn btn--outline">Info Sekolah</a>
+            </div>
+          </div>
+          <div class="home-img-box">
+            <img
+              src="img /sma-img-1.jpg"
+              class="home-img"
+              alt="Students SMA 1 Baturiti"
+            />
           </div>
         </div>
       </section>
 
+      <!-- SECTION-PROFIL -->
       <section class="section-profil">
         <div class="profil">
           <div class="profil-tex-box">
@@ -71,6 +115,16 @@
           </div>
         </div>
       </section>
+
+      <footer class="footer">
+        <div>
+          <p class="copyright">
+            Copyright &copy; <span class="year">2021</span>
+            SMAN 1 Baturiti.
+            <!-- Developed by Cahya Kumala -->
+          </p>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
