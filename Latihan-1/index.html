@@ -7,6 +7,7 @@
     <!-- INI LINK UNTUK MENGHUBUNGKAN FILE CSS KE INDEX -->
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <link rel="icon" href="img /logo-sma-1-01.svg" />
     <title>SMA NEGERI 1 BATURITI</title>
@@ -23,19 +24,34 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-      <a href="#">
-        <img class="logo" alt="SMA logo" src="img /logo-sma-1-01.svg" />
-      </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#">Home</a></li>
-          <li><a class="main-nav-link" href="#">Profil</a></li>
+          <li><a class="main-nav-link" href="#select-where">Profil</a></li>
           <li><a class="main-nav-link" href="#">Guru</a></li>
           <li><a class="main-nav-link" href="#">Siswa</a></li>
           <li><a class="main-nav-link" href="#">Alumni</a></li>
+          <li><a class="main-nav-link" href="galeri.html">Galeri</a></li>
           <li><a class="main-nav-link nav-cta" href="#">Fitur</a></li>
         </ul>
       </nav>
+
+      <div class="school-description">
+        <a href="#">
+          <img class="logo" alt="SMA logo" src="img /logo-sma-1-01.svg" />
+        </a>
+
+        <div class="description">
+          <h1 class="head heading-primary">Sman 1 baturiti</h1>
+          <p class="text-description">
+            Br.Puseh, Ds.Perean, Baturiti, Tabanan-Bali<br />
+            Email: sman1baturiti@gmail.com <br />
+            Website: sman1Baturiti.sch.id
+          </p>
+          <a href="#login-member" class="btn btn--full">Login Member</a>
+          <a href="#" class="btn btn--outline">Info Sekolah</a>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -62,40 +78,41 @@
         </div>
       </section> -->
 
-      <section class="section-home">
-        <div class="home">
-          <div class="school">
-            <img
-              src="img /sma-image.png"
-              class="school-img"
-              alt="SMA 1 BATURITI"
-            />
-            <div class="home-text-box">
-              <h1 class="head heading-primary">Sman 1 baturiti</h1>
-              <p class="home-description">
-                Br.Puseh, Ds.Perean, Baturiti,Tabanan-Bali<br />
-                Email:sman1baturiti@gmail.com <br />
-                Website: sman1Baturiti.sch.id
-              </p>
-              <a href="#" class="btn btn--full">Login Member</a>
-              <a href="#" class="btn btn--outline">Info Sekolah</a>
-            </div>
-          </div>
-          <div class="home-img-box">
-            <img
-              src="img /sma-img-1.jpg"
-              class="home-img"
-              alt="Students SMA 1 Baturiti"
-            />
-          </div>
-        </div>
-      </section>
-
       <!-- SECTION-PROFIL -->
       <section class="section-profil">
         <div class="profil">
-          <div class="profil-tex-box">
-            <h2></h2>
+          <div class="profil-text-box">
+            <h2>PROFIL SMAN 1 BATURITI</h2>
+            <p class="profil-text">
+              Pendidikan Nasional yang berdasarkan Pancasila dan UUD tahun 1945
+              berfungsi untuk mengembangkan kemampuan dan membentuk watak serta
+              peradaban bangsa yang bermartabat dalam rangka mencerdaskan
+              kehidupan bangsa. Pendidikan Nasional memiliki tujuan untuk
+              mengembangkan potensi peserta didik agar menjadi manusia yang
+              beriman dan bertakwa kepada Tuhan Yang Maha Esa, berakhlak mulia,
+              sehat, berilmu, cakap, kreatif, mandiri, dan menjadi warga negara
+              yang demokratis serta bertanggung jawab.
+            </p>
+            <p class="profil-text">
+              Peningkatan mutu pendidikan secara ideal haruslah dilakukan secara
+              terus menerus dan diarahkan untuk meningkatkan kualitas manusia
+              Indonesia seutuhnya, meskipun saat ini bangsa kita sedang dilanda
+              pandemic virus covid-19. Peningkatan mutu pendidikan dilakukan
+              melalui olah hati, olah rasa, dan olah raga agar memiliki daya
+              saing dalam menghadapi tantangan global. Peningkatan mutu
+              pendidikan yang dilakukan dimaksudkan untuk menghasilkan lulusan
+              yang sesuai dengan tuntutan kebutuhan berbasis potensi sumber daya
+              alam Indonesia. Peningkatan efisiensi manajemen pendidikan
+              dilakukan melalui penerapan manajemen berbasis sekolah dan
+              pembaharuan pengelolaan pendidikan secara terencana, terarah, dan
+              berkesinambungan.
+            </p>
+            <p class="profil-text"></p>
+            <p class="profil-text"></p>
+            <p class="profil-text"></p>
+            <p class="profil-text"></p>
+            <p class="profil-text"></p>
+            <p class="profil-text"></p>
           </div>
         </div>
       </section>
@@ -116,12 +133,68 @@
         </div>
       </section>
 
+      <section class="section-cta" id="login-member">
+        <!-- LOGIN MEMBER -->
+        <div class="container grid grid--2-cols">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Login Member</h2>
+              <form class="cta-form" action="#">
+                <div>
+                  <label for="name">Username:</label>
+                  <input
+                    id="name"
+                    type="text"
+                    placeholder="username"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="password">Password:</label>
+                  <input
+                    id="password"
+                    type="text"
+                    placeholder="password"
+                    required
+                  />
+                </div>
+
+                <button class="btn btn--form">Login</button>
+                <button class="btn btn--form">Daftar</button>
+              </form>
+            </div>
+          </div>
+          <!-- PENCARIAN -->
+          <div class="container">
+            <div class="cta">
+              <div class="cta-text-box">
+                <h2 class="heading-secondary">Pencarian</h2>
+                <form class="cta-form" action="#">
+                  <div>
+                    <label for="pencarian">cari:</label>
+                    <input
+                      id="name"
+                      type="text"
+                      placeholder="Pencarian"
+                      required
+                    />
+                  </div>
+                  <button class="btn btn--form">Cari</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="section-cta" id="cta"></section> -->
+
       <footer class="footer">
+        <h4>kembali ke atas</h4>
         <div>
           <p class="copyright">
             Copyright &copy; <span class="year">2021</span>
             SMAN 1 Baturiti.
-            <!-- Developed by Cahya Kumala -->
           </p>
         </div>
       </footer>

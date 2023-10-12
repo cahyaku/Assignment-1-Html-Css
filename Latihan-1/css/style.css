@@ -2,24 +2,20 @@
 /* HEADER */
 /**************************/
 .header {
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
-  align-items: center;
   background-color: #a5d8ff;
-  height: 9.6rem;
+
   padding: 0 4.8rem;
-
-  /* position: relative; */
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(sma-img-1.jpg);
+  background-size: cover;
+  position: relative;
 }
-
-/* .header-container {
-  width: 1200px;
-  position: absolute;
-
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-} */
 
 h1 {
   font-size: 5.2rem;
@@ -34,12 +30,45 @@ p {
 }
 
 .logo {
-  height: 9.6rem;
+  width: 100%;
+}
+
+.head {
+  font-size: 5rem;
+  text-transform: uppercase;
+  /* color: red; */
+  color: #fff;
+  padding-top: 2rem;
+}
+
+.text-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+  align-items: center;
+  color: #ddd;
+  padding-top: 4.8rem;
+}
+
+.school-description {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  display: flex;
+  gap: 9.6rem;
+  box-shadow: 0 2.4rem 2.4rem rgba(0, 0, 0, 0.36);
+  border-radius: 11px;
 }
 
 /**************************/
 /* NAVIGATION */
 /**************************/
+.main-nav {
+  padding-top: 1.6rem;
+  position: absolute;
+  left: 60%;
+}
+
 .main-nav-list {
   list-style: none;
   display: flex;
@@ -51,7 +80,7 @@ p {
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #333;
+  color: #fff;
   font-weight: 500;
   font-size: 1.8rem;
   transition: all 0.4s;
@@ -78,20 +107,19 @@ p {
 /**************************/
 /* HOME SECTION */
 /**************************/
-.section-home {
-  /* background-color: #d0ebff; */
+/* .section-home {
   background-color: #e7f5ff;
   padding: 4.8rem 0 9.6rem 0;
-  /* width: 100vh;
+  width: 100vh;
   background-image: linear-gradient(
       rgba(34, 34, 34, 0.452),
       rgba(34, 34, 34, 0.452)
     ),
     url(sma-img-1.jpg);
-  background-size: cover; */
-}
+  background-size: cover;
+} */
 
-.home {
+/* .home {
   max-width: 130rem;
   margin: 0 auto;
   padding: 3.2rem;
@@ -109,7 +137,6 @@ p {
 }
 
 .home-text-box {
-  /* border: 2px solid #333; */
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 11px;
   padding: 10rem 2rem 10rem 2rem;
@@ -120,12 +147,7 @@ p {
   border-radius: 11px;
 }
 
-.head {
-  font-size: 3.6rem;
-  text-transform: uppercase;
-  color: red;
-  padding-top: 0;
-}
+
 
 .home-img {
   width: 100%;
@@ -134,4 +156,70 @@ p {
 
 .school-img {
   width: 100%;
+} */
+
+/* main {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.452),
+      rgba(34, 34, 34, 0.452)
+    ),
+    url(sma-img-2.jpg); */
+/* background-image: url(sma-img-2.jpg); */
+/* background-image: url(sma-image.png); */
+/* background-size: cover;
+} */
+
+/**************************/
+/* CTA SECTION*/
+/**************************/
+.section-cta {
+  padding: 4.8rem 0 12.8rem;
+}
+
+.cta {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.015);
+  border-radius: 11px;
+  background-color: #d0ebff;
+  padding: 2.4rem;
+}
+
+.cta-text-box {
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.363);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.534);
 }
