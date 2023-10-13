@@ -83,7 +83,7 @@ body {
 
 .btn--full:link,
 .btn--full:visited {
-  background-color: blue;
+  background-color: #364fc7;
 }
 
 .btn--full:hover,
@@ -114,4 +114,8 @@ body {
 /*****************************/
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+.center-text {
+  text-align: center;
 }

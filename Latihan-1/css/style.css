@@ -2,19 +2,22 @@
 /* HEADER */
 /**************************/
 .header {
-  /* display: flex; */
+  display: grid;
+  grid-template-columns: 1fr;
+
   justify-content: space-between;
   background-color: #a5d8ff;
 
-  padding: 0 4.8rem;
+  /* padding: 0 4.8rem; */
   height: 100vh;
   background-image: linear-gradient(
-      rgba(34, 34, 34, 0.6),
-      rgba(34, 34, 34, 0.6)
+      rgba(34, 34, 34, 0.7),
+      rgba(34, 34, 34, 0.7)
     ),
     url(sma-img-1.jpg);
+
   background-size: cover;
-  position: relative;
+  background-position: 90% 0;
 }
 
 h1 {
@@ -31,33 +34,40 @@ p {
 
 .logo {
   width: 100%;
+  justify-items: center;
 }
 
 .head {
   font-size: 5rem;
   text-transform: uppercase;
-  /* color: red; */
   color: #fff;
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 
 .text-description {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.6;
   margin-bottom: 4.8rem;
   align-items: center;
-  color: #ddd;
+  color: #fff;
   padding-top: 4.8rem;
+  font-weight: 400;
+  /* letter-spacing: 0.1; */
+  /* justify-content: center; */
 }
 
 .school-description {
-  position: absolute;
-  top: 30%;
-  left: 25%;
   display: flex;
   gap: 9.6rem;
-  box-shadow: 0 2.4rem 2.4rem rgba(0, 0, 0, 0.36);
+  box-shadow: 0 2.4rem 2.4rem 0 rgba(0, 0, 0, 0.36);
   border-radius: 11px;
+  background-color: rgba(0, 0, 0, 0.637);
+  margin: 25rem 40rem 25rem 40rem;
+  justify-content: center;
+}
+
+.login {
+  margin-right: 1.5rem;
 }
 
 /**************************/
@@ -83,12 +93,14 @@ p {
   color: #fff;
   font-weight: 500;
   font-size: 1.8rem;
-  transition: all 0.4s;
+  transition: all 0.3s;
 }
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: blue;
+  color: #1971c2;
+  background-color: #fff;
+  padding: 1rem;
 }
 
 .main-nav-link.nav-cta:link,
@@ -96,7 +108,7 @@ p {
   padding: 1.1rem 2.2rem;
   border-radius: 9px;
   color: #fff;
-  background-color: blue;
+  background-color: #364fc7;
 }
 
 .main-nav-link.nav-cta:hover,
@@ -147,8 +159,6 @@ p {
   border-radius: 11px;
 }
 
-
-
 .home-img {
   width: 100%;
   border-radius: 11px;
@@ -169,6 +179,73 @@ p {
 /* background-image: url(sma-image.png); */
 /* background-size: cover;
 } */
+
+/**************************/
+/* PROFIL SECTION */
+/**************************/
+.section-profil {
+  padding: 9.6rem 0;
+}
+
+.profil {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border: 12px;
+  /* border-radius: 11px; */
+  overflow: hidden;
+}
+
+.profil-title {
+  font-size: 3rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 4.8rem;
+  justify-content: center;
+}
+
+.profil-title-box {
+  font-size: 2.4rem;
+  color: #444;
+  font-weight: 600;
+  /* margin-bottom: 1.6rem; */
+}
+
+.profil-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.profil-img {
+  width: 100%;
+}
+
+/**************************/
+/* NEWS SECTION*/
+/**************************/
+.section-news {
+  padding: 9.6rem 0;
+}
+
+.photo-smerti {
+  width: 100%;
+}
+
+.news {
+  background-color: #e9ecef;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* row-gap: 2rem; */
+  column-gap: 2rem;
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.news-title {
+  justify-content: left;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  /* text-transform: uppercase; */
+}
 
 /**************************/
 /* CTA SECTION*/
@@ -222,4 +299,13 @@ p {
 .cta *:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.534);
+}
+
+/**************************/
+/* FOOTER */
+/**************************/
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
 }

@@ -1,5 +1,6 @@
 .header-gallery {
-  /* display: flex; */
+  display: grid;
+  grid-template-columns: 1fr;
   justify-content: space-between;
   background-color: #a5d8ff;
 
@@ -9,9 +10,9 @@
       rgba(34, 34, 34, 0.6),
       rgba(34, 34, 34, 0.6)
     ),
-    url(sma-img-3.png);
+    url(pramuka.jpg);
   background-size: cover;
-  position: relative;
+  background-position: 10% 52%;
 }
 
 .gallery {
