@@ -1,7 +1,7 @@
+/* HEADER */
+
 .header-gallery {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: space-between;
+  /* display: flex; */
   background-color: #a5d8ff;
 
   padding: 0 4.8rem;
@@ -13,6 +13,32 @@
     url(pramuka.jpg);
   background-size: cover;
   background-position: 10% 52%;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.head-title-box {
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 2.4rem 0 rgba(0, 0, 0, 0.36);
+  background-color: rgba(0, 0, 0, 0.637);
+  margin: 20rem 60rem;
+  align-items: center;
+}
+
+.head-title {
+  text-transform: uppercase;
+  font-size: 3.6rem;
+  font-weight: bold;
+  padding: 4.8rem;
+  color: #fff;
+  text-align: center;
+}
+
+.logo-img {
+  height: 11rem;
 }
 
 .gallery {
@@ -43,6 +69,25 @@
   color: #fff;
 }
 
-.description {
-  padding-top: 12rem;
+/*******************/
+/* GALERI TITLE */
+/*******************/
+.gallery-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75;
+  margin-top: 6.2rem;
 }
+
+.gallery-text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+  color: #228be6;
+}
+/* .description {
+  padding-top: 12rem;
+} */
