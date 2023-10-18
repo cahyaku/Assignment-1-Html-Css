@@ -110,69 +110,56 @@ p {
   background-color: #228be6;
 }
 
-/**************************/
-/* HOME SECTION */
-/**************************/
-/* .section-home {
-  background-color: #e7f5ff;
-  padding: 4.8rem 0 9.6rem 0;
-  width: 100vh;
-  background-image: linear-gradient(
-      rgba(34, 34, 34, 0.452),
-      rgba(34, 34, 34, 0.452)
-    ),
-    url(sma-img-1.jpg);
-  background-size: cover;
-} */
+.icon {
+  color: #fff;
+  height: 2.4rem;
+  width: 2.4rem;
+}
 
-/* .home {
-  max-width: 130rem;
-  margin: 0 auto;
-  padding: 3.2rem;
+/**************************/
+/* PROFIL SECTION*/
+/**************************/
+.box {
+  background-color: #e9ecef;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  column-gap: 4.6rem;
   align-items: center;
-  gap: 4.6rem;
+  /* border-radius: 11px; */
+  overflow: hidden;
+  padding: 4.6rem;
 }
 
-.home-description {
-  font-size: 2rem;
-  line-height: 1.6;
-  margin-bottom: 4.8rem;
-  align-items: center;
+.box-title {
+  justify-content: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #444;
+  text-align: center;
+  margin-bottom: 1.6rem;
 }
 
-.home-text-box {
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-  border-radius: 11px;
-  padding: 10rem 2rem 10rem 2rem;
+.text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 1.8rem;
 }
 
-.home-img-box {
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-  border-radius: 11px;
+.text-list {
+  padding-left: 1.8rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
-.home-img {
+.photo-img {
   width: 100%;
-  border-radius: 11px;
+  /* box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.288); */
+  /* border: 1.4rem solid #adb5bd; */
+  background: linear-gradient(to right, grey, #ced4da);
+  padding: 1rem;
 }
-
-.school-img {
-  width: 100%;
-} */
-
-/* main {
-  height: 100vh;
-  background-image: linear-gradient(
-      rgba(34, 34, 34, 0.452),
-      rgba(34, 34, 34, 0.452)
-    ),
-    url(sma-img-2.jpg); */
-/* background-image: url(sma-img-2.jpg); */
-/* background-image: url(sma-image.png); */
-/* background-size: cover;
-} */
 
 /**************************/
 /* PROFIL SECTION */
@@ -202,7 +189,6 @@ p {
   font-size: 2.4rem;
   color: #444;
   font-weight: 600;
-  /* margin-bottom: 3.2rem; */
 }
 
 .profil-text {
@@ -212,6 +198,10 @@ p {
   /* text-align: center; */
   padding: 2.4rem 4rem;
   /* padding: 3rem 4rem; */
+}
+
+.profil-box {
+  overflow: hidden;
 }
 
 .profil-img {
@@ -230,7 +220,7 @@ p {
   padding: 9.6rem 0;
 }
 
-.photo-smerti {
+/* .photo-smerti {
   width: 100%;
 }
 
@@ -255,6 +245,76 @@ p {
 .news-text {
   padding-top: 1.8rem;
   font-size: 1.8rem;
+} */
+
+.news {
+  /* width: 80rem; */
+  margin: 1rem auto;
+  background-color: #e9ecef;
+  padding: 3.2rem 4.8rem 3.2rem 8.6rem;
+
+  display: flex;
+  align-items: center;
+  gap: 9.6rem;
+
+  border: 1rem solid;
+  background-color: linear-gradient(to right, #adb5bd, #fff);
+}
+
+.news-img {
+  height: 20rem;
+  /* border-radius: 11px; */
+  transform: scale(1.5);
+  box-shadow: 0 1.2rem 24rem rgba(0, 0, 0, 0, 0.25);
+}
+
+.btn-news {
+  background-color: #364fc7;
+  border: none;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .btn-news {
+  background-color: #1971c2;
+} */
+
+.btn--left {
+  left: 18%;
+}
+
+.btn--right {
+  right: 18%;
+}
+
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: -205rem;
+  transform: translate(-50%, 3.2rem);
+  display: flex;
+  gap: 1.2rem;
+}
+
+.dot {
+  height: 1.2rem;
+  width: 1.2rem;
+  background-color: #fff;
+  border: 0.2rem solid #364fc7;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot--fill {
+  background-color: #364fc7;
 }
 
 /**************************/
@@ -268,6 +328,7 @@ p {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.015);
   border-radius: 11px;
   background-color: #d0ebff;
+  /* background-color: #a5d8ff; */
   padding: 2.4rem;
 }
 
@@ -309,6 +370,14 @@ p {
 .cta *:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.534);
+}
+
+/**************************/
+/* LOGIN */
+/**************************/
+.login-cta {
+  /* padding-top: 12rem; */
+  margin: 20rem;
 }
 
 /**************************/

@@ -12,6 +12,12 @@
     <link rel="icon" href="img /logo-sma-1-01.svg" />
     <title>SMA NEGERI 1 BATURITI</title>
 
+    <!-- ion-icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,6 +39,12 @@
           <li><a class="main-nav-link" href="#">Alumni</a></li>
           <li><a class="main-nav-link" href="galeri.html">Galeri</a></li>
           <li><a class="main-nav-link nav-cta" href="#">Fitur</a></li>
+          <li>
+            <a class="main-nav-link search-outline" href="#"></a>
+            <a class="footer-link" href="galeri.html"
+              ><ion-icon class="icon" name="search-outline"></ion-icon
+            ></a>
+          </li>
         </ul>
       </nav>
 
@@ -48,7 +60,7 @@
             Website: sman1Baturiti.sch.id
           </p>
           <a href="login.html" class="login btn btn--full">Login Member</a>
-          <a href="#" class="btn btn--outline">Info Sekolah</a>
+          <a href="#" class="btn btn--outline">Info Sekolah &rarr;</a>
         </div>
       </div>
     </header>
@@ -57,18 +69,21 @@
       <!-- SECTION-PROFIL -->
       <section class="container section-profil" id="profil-sekolah">
         <h2 class="profil-title center-text">Profil SMA Negeri 1 Baturiti</h2>
+
         <div class="grid grid--3-cols">
           <div class="profil">
             <img
               class="profil-img"
-              src="img /sma-img-9.jpg"
-              alt="profil-photo"
+              src="img /pramuka.jpg"
+              alt="SMA NEGERI 1 BARURITI"
             />
-            <p class="profil-title-box">Visi dan Misi</p>
+            <p class="profil-title-box">Tujuan Sekolah</p>
             <ul class="profil-text">
-              <li>Beriman</li>
-              <li>Berbudaya</li>
-              <li>Cerdas dan Berprestasi</li>
+              <li>Meraih prestasi di bidang IPTEK(OSN)</li>
+              <li>Meraih prestasi bidang Kepramukaan</li>
+              <li>Meraih prestasi di bidang olahraga</li>
+              <li>Mengembangkan budaya santun</li>
+              <li>Mewujudakan sekolah berprestasi</li>
             </ul>
           </div>
 
@@ -81,29 +96,66 @@
             />
             <p class="profil-title-box">Tentang Sekolah</p>
             <p class="profil-text">
-              SMA Negeri 1 Baturiti berdiri pada <br />
-              tanggal 1 April 1990 (satu-satunya <br />
-              sma Negeri di Kecamatan Baturiti).
+              NPSN : 50101131<br />
+
+              Status : Negeri<br />
+
+              Bentuk Pendidikan : SMA<br />
+
+              Kepemilikan : Pemerintah Daerah<br />
+
+              SK Pendirian Sekolah : 0389/0/1990<br />
+
+              Tanggal SK Pendirian : 1990-04-01<br />
+
+              <!-- SK Izin Operasional : 0389/0/1990<br /> -->
+
+              <!-- Tanggal SK Izin Operasional : 1990-04-01<br /> -->
             </p>
           </div>
 
           <div class="profil">
             <img
               class="profil-img"
-              src="img /pramuka.jpg"
-              alt="SMA NEGERI 1 BARURITI"
+              src="img /sma-img-9.jpg"
+              alt="profil-photo"
             />
-            <p class="profil-title-box">Tujuan Sekolah</p>
-            <ul class="profil-text">
-              <li>Meraih prestasi di bidang IPTEK(OSN)</li>
-              <li>Meraih prestasi bidang Kepramukaan</li>
-              <li>Meraih prestasi di bidang olahraga</li>
-            </ul>
+            <p class="profil-title-box">Sejarah singkat</p>
+            <p class="profil-text">
+              SMA Negeri 1 Baturiti berdiri pada tanggal 1 April 1990 (satu-
+              satunya SMA Negeri di Kecamatan Baturiti). Pada awal berdirinya,
+              sekolah ini bernama Sekolah Menengah Atas Negeri 1 Baturiti.
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img class="photo-img" src="img /sma-img-5.png" alt="news" />
+          </div>
+
+          <div class="box-description">
+            <h3 class="box-title">Visi</h3>
+            <p class="text">
+              Visi SMA Negeri 1 Baturiti berbunyi: "Beriman, Berbudaya, Cerdas
+              dan Berprestasi". Dalam visi ini tersirat empat pesan dan harapan
+              yang ingin diraih melalui pengeloaan kehidupan sekolah.
+            </p>
+            <h3 class="box-title">Misi</h3>
+            <ol class="text-list">
+              <li>Melakukan pembiasaan Tri Sandya</li>
+              <li>Melakukan persembahyangan Purnama Tilem & Hari Raya Suci</li>
+              <li>Pengembangan dalam bidang akademis maupun non akademis</li>
+              <li>Meningkatkan pembelajaran berbasis IT</li>
+              <li>
+                Meningkatan sarana & prasana pendukung kegiatan pembelajaran
+              </li>
+            </ol>
           </div>
         </div>
       </section>
 
-      <section class="container section-news">
+      <!-- <section class="container section-news">
         <h2 class="heading-secondary">Berita Terbaru</h2>
         <div class="news">
           <div class="news-img">
@@ -126,46 +178,60 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <!-- SECTION-PROFIL -->
-      <!-- <section class="section-profil">
-        <div class="profil">
-          <div class="profil-text-box">
-            <h2>PROFIL SMAN 1 BATURITI</h2>
-            <p class="profil-text">
-              Pendidikan Nasional yang berdasarkan Pancasila dan UUD tahun 1945
-              berfungsi untuk mengembangkan kemampuan dan membentuk watak serta
-              peradaban bangsa yang bermartabat dalam rangka mencerdaskan
-              kehidupan bangsa. Pendidikan Nasional memiliki tujuan untuk
-              mengembangkan potensi peserta didik agar menjadi manusia yang
-              beriman dan bertakwa kepada Tuhan Yang Maha Esa, berakhlak mulia,
-              sehat, berilmu, cakap, kreatif, mandiri, dan menjadi warga negara
-              yang demokratis serta bertanggung jawab.
+      <!-- SECTION NEWS  -->
+      <section class="container section-news">
+        <h2 class="heading-secondary">Berita Terbaru</h2>
+        <div class="news">
+          <img
+            class="news-img"
+            src="img /sma-img-9.jpg"
+            alt="Pramuka SMA Negeri 1
+              Baturiti"
+          />
+          <blockquote class="pramuka">
+            <p class="news-text">
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              quod et tenetur ratione minima praesentium necessitatibus ut
+              blanditiis fuga molestiae? Iure similique repellat debitis
+              reiciendis impedit dolorem architecto facilis ad?"
             </p>
-            <p class="profil-text">
-              Peningkatan mutu pendidikan secara ideal haruslah dilakukan secara
-              terus menerus dan diarahkan untuk meningkatkan kualitas manusia
-              Indonesia seutuhnya, meskipun saat ini bangsa kita sedang dilanda
-              pandemic virus covid-19. Peningkatan mutu pendidikan dilakukan
-              melalui olah hati, olah rasa, dan olah raga agar memiliki daya
-              saing dalam menghadapi tantangan global. Peningkatan mutu
-              pendidikan yang dilakukan dimaksudkan untuk menghasilkan lulusan
-              yang sesuai dengan tuntutan kebutuhan berbasis potensi sumber daya
-              alam Indonesia. Peningkatan efisiensi manajemen pendidikan
-              dilakukan melalui penerapan manajemen berbasis sekolah dan
-              pembaharuan pengelolaan pendidikan secara terencana, terarah, dan
-              berkesinambungan.
+            <p class="news-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
+              nulla ad sit architecto nobis iusto rerum magnam beatae eligendi
+              nostrum eum optio labore rem, doloribus consectetur illo
+              dignissimos quisquam non?
             </p>
-            <p class="profil-text"></p>
-            <p class="profil-text"></p>
-            <p class="profil-text"></p>
-            <p class="profil-text"></p>
-            <p class="profil-text"></p>
-            <p class="profil-text"></p>
+            <p class="news-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              officia consequuntur cumque dolorem labore sequi, cupiditate
+              possimus debitis culpa totam, alias nobis fugit dolorum beatae
+              quas. Accusamus ab voluptatibus quos?
+            </p>
+          </blockquote>
+
+          <button class="btn-news btn--left">
+            <ion-icon
+              class="icon"
+              name="chevron-back-circle-outline"
+            ></ion-icon>
+          </button>
+          <button class="btn-news btn--right">
+            <ion-icon
+              class="icon"
+              name="chevron-forward-circle-outline"
+            ></ion-icon>
+          </button>
+
+          <div class="dots">
+            <button class="dot dot--fill">&nbsp</button>
+            <button class="dot">&nbsp</button>
+            <button class="dot">&nbsp</button>
+            <button class="dot">&nbsp</button>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <section class="section-guru">
         <div class="guru">
