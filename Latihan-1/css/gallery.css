@@ -10,7 +10,7 @@
       rgba(34, 34, 34, 0.6),
       rgba(34, 34, 34, 0.6)
     ),
-    url(pramuka.jpg);
+    url(sma-img-9.jpg);
   background-size: cover;
   background-position: 10% 52%;
 }
@@ -23,7 +23,7 @@
 .head-title-box {
   border-radius: 11px;
   box-shadow: 0 2.4rem 2.4rem 0 rgba(0, 0, 0, 0.36);
-  background-color: rgba(0, 0, 0, 0.637);
+  background-color: rgba(0, 0, 0, 0.767);
   margin: 20rem 60rem;
   align-items: center;
 }
