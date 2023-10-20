@@ -49,6 +49,16 @@ p {
   font-weight: 400;
 }
 
+.school-link {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.school-link:hover {
+  color: #364fc7;
+}
+
 .school-description {
   display: flex;
   gap: 9.6rem;
@@ -179,6 +189,11 @@ p {
   border: 12px;
   border-radius: 11px;
   overflow: hidden;
+  transition: all 1s;
+}
+
+.profil:hover {
+  transform: translateY(-3rem);
 }
 
 .profil-title {
@@ -223,7 +238,7 @@ p {
 /* NEWS SECTION*/
 /**************************/
 .section-news {
-  padding: 4.8rem 0;
+  padding: 0 0 9.6rem 0;
 }
 
 .news {
@@ -260,7 +275,7 @@ p {
 .news-title {
   color: #333;
   font-size: 2.4rem;
-  margin-bottom: 2.4rem;
+  /* margin-bottom: 2.4rem; */
   text-align: center;
   padding-bottom: 2rem;
   border-bottom: 0.1rem solid rgba(51, 51, 51, 0.527);
@@ -296,17 +311,17 @@ p {
 }
 
 .btn--left {
-  left: 17.5%;
+  left: 19%;
 }
 
 .btn--right {
-  right: 17.5%;
+  right: 19%;
 }
 
 .dots {
   position: absolute;
   left: 50%;
-  bottom: -205rem;
+  bottom: -193rem;
   transform: translate(-50%, 3.2rem);
   display: flex;
   gap: 1.2rem;
@@ -333,6 +348,79 @@ p {
 }
 
 /**************************/
+/* INFORMATION SECTION*/
+/**************************/
+.section-information {
+  padding: 0 0 9.6rem 0;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.information-box {
+  display: grid;
+  grid-template-columns: 0fr 3fr;
+  background-color: #eee;
+  /* background-color: #ddd; */
+}
+
+.information-img {
+  border-right: 0.2rem dashed rgba(134, 142, 150, 0.412);
+  padding-right: 1rem;
+}
+
+.info-img {
+  width: 40vh;
+  background: linear-gradient(to right, #868e96, #ced4da);
+  padding: 1rem;
+  transition: all 0.3s;
+}
+
+.info-img:hover {
+  transform: scale(1.2);
+  /* transform: skew(10deg); */
+  /* transform: rotate(10deg); */
+}
+
+.information-box {
+  overflow: hidden;
+}
+
+.information-text-box {
+  padding: 2rem 2rem 2rem 4.8rem;
+}
+
+.information-text {
+  padding-top: 1rem;
+  font-size: 1.8rem;
+  color: #444;
+}
+
+.information-time {
+  font-size: 1.3rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+/* INFORMATION LINK */
+
+.information-link:link,
+.information-link:visited {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #444;
+  transition: all 0.3s;
+}
+
+.information-link:hover,
+.information-link:active {
+  color: #364fc7;
+}
+/**************************/
 /* CTA SECTION*/
 /**************************/
 .section-cta {
@@ -342,8 +430,8 @@ p {
 .cta {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.015);
   border-radius: 11px;
-  background-color: #d0ebff;
-  /* background-color: #a5d8ff; */
+  /* background-color: #d0ebff; */
+  background-color: #edf2ff;
   padding: 2.4rem;
 }
 
@@ -388,9 +476,9 @@ p {
 }
 
 /**************************/
-/* LOGIN */
+/* LOGIN & SEARCH*/
 /**************************/
-.login-cta {
+.cta-box {
   /* padding-top: 12rem; */
   margin: 20rem;
 }
@@ -400,7 +488,7 @@ p {
 /**************************/
 .footer {
   margin-top: 9.6rem;
-  padding: 12.8rem 0;
+  padding: 12.8rem 0 3.2rem 0;
   /* border-top: 1rem solid #eee; */
   background-color: #212529;
 }

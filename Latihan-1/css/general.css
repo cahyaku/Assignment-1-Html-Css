@@ -21,7 +21,9 @@ body {
 /**************************/
 
 .container {
-  max-width: 120rem;
+  /* max-width: 120rem; */
+  /* max-width: 1200px; */
+  max-width: 1140px;
   padding: 0 3.2rem;
   margin: 0 auto;
 }
@@ -104,7 +106,8 @@ body {
 }
 
 .btn--form {
-  background-color: #1864ab;
+  /* background-color: #1864ab; */
+  background-color: #364fc7;
   color: #fdf2e9;
   align-self: end;
 }
