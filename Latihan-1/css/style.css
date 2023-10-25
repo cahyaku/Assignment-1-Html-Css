@@ -138,6 +138,8 @@ p {
   /* border-radius: 11px; */
   /* overflow: hidden; */
   padding: 4.6rem;
+  /* border: thick double #2125298c; */
+  border: 4mm ridge #ced4da;
 }
 
 .box-title {
@@ -166,9 +168,10 @@ p {
 .photo-img {
   width: 100%;
   /* box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.288); */
-  /* border: 1.4rem solid #adb5bd; */
-  background: linear-gradient(to right, grey, #ced4da);
+  /* background: linear-gradient(to right, grey, #ced4da); */
   padding: 1rem;
+
+  border: thick double grey;
   transition: all 1.5s;
 }
 
@@ -252,7 +255,10 @@ p {
   align-items: center;
   gap: 0 4.8rem;
 
-  border: 1rem solid #aaa;
+  /* border: 1rem solid #aaa; */
+  /* border: thick double #aaa; */
+
+  border: 4mm ridge #ced4da;
   background: linear-gradient(to right, #ced4da, #fff);
 
   overflow: hidden;
@@ -275,10 +281,10 @@ p {
 .news-title {
   color: #333;
   font-size: 2.4rem;
-  /* margin-bottom: 2.4rem; */
   text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   border-bottom: 0.1rem solid rgba(51, 51, 51, 0.527);
+  margin-bottom: 2rem;
 }
 
 .news-text {
@@ -321,7 +327,7 @@ p {
 .dots {
   position: absolute;
   left: 50%;
-  bottom: -193rem;
+  bottom: -200rem;
   transform: translate(-50%, 3.2rem);
   display: flex;
   gap: 1.2rem;
@@ -364,11 +370,11 @@ p {
   display: grid;
   grid-template-columns: 0fr 3fr;
   background-color: #eee;
-  /* background-color: #ddd; */
+  overflow: hidden;
 }
 
 .information-img {
-  border-right: 0.2rem dashed rgba(134, 142, 150, 0.412);
+  border-right: 0.2rem dashed rgb(134, 142, 150);
   padding-right: 1rem;
 }
 
@@ -494,8 +500,8 @@ p {
 }
 
 .grid--footer {
-  grid-template-columns: 1fr 1fr 1fr 1.5fr 1fr;
-  gap: 4rem;
+  grid-template-columns: 1fr 1.5fr 1fr 1.5fr 1fr;
+  gap: 5rem;
 }
 
 .smerti-logo {
@@ -512,7 +518,7 @@ p {
 }
 
 .footer-text {
-  margin-top: 4.8rem;
+  margin-top: 1.6rem;
   font-size: 1.6rem;
   color: #aaa;
 }
@@ -521,6 +527,7 @@ p {
   list-style: none;
   display: flex;
   gap: 2.4rem;
+  margin-bottom: 6.4rem;
 }
 
 .social-icon {
@@ -544,12 +551,24 @@ p {
 }
 
 .contacts {
-  font-style: normal;
-  font-size: 1.6rem;
+  display: flex;
+  gap: 2rem;
+  padding-top: 1.6rem;
 }
 
 .contact {
   line-height: 1.6rem;
+}
+
+.contacts-icon {
+  color: #fff;
+  padding-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.contacts-text {
+  font-style: normal;
+  font-size: 1.6rem;
 }
 
 .address {

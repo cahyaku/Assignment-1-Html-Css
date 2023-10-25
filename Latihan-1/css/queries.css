@@ -23,10 +23,12 @@
     /* 9x/16px = 56.25 */
     font-size: 56.25%;
   }
+
   .grid {
     column-gap: 4.8rem;
     row-gap: 6.4rem;
   }
+
   .heading-secondary {
     font-size: 3.6rem;
   }
@@ -43,11 +45,16 @@
   }
 
   .main-nav {
-    /* ini untuk mengautur kedalaman tombol nav ketika halaman diperkecil*/
+    /* ini untuk mengatur kedalaman tombol nav ketika halaman diperkecil*/
     left: 50%;
   }
 
   .school-description {
     margin: 25rem 10rem 20rem 10rem;
+  }
+
+  /* GALLERY */
+  .header-gallery {
+    padding: 0 3.2rem;
   }
 }
