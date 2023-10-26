@@ -36,6 +36,7 @@
   .header {
     padding: 0 3.2rem;
   }
+
   .main-nav-list {
     gap: 3.2rem;
   }
@@ -51,6 +52,15 @@
 
   .school-description {
     margin: 25rem 10rem 20rem 10rem;
+  }
+
+  /* NEWS SECTION */
+  .btn--left {
+    left: 1%;
+  }
+
+  .btn--right {
+    right: 1%;
   }
 
   /* GALLERY */

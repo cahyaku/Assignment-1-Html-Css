@@ -224,9 +224,9 @@ p {
   /* padding: 3rem 4rem; */
 }
 
-.profil-box {
+/* .profil-box {
   overflow: hidden;
-}
+} */
 
 .profil-img {
   width: 100%;
@@ -368,7 +368,7 @@ p {
 
 .information-box {
   display: grid;
-  grid-template-columns: 0fr 3fr;
+  grid-template-columns: 1.3fr 3fr;
   background-color: #eee;
   overflow: hidden;
 }
@@ -376,6 +376,7 @@ p {
 .information-img {
   border-right: 0.2rem dashed rgb(134, 142, 150);
   padding-right: 1rem;
+  overflow: hidden;
 }
 
 .info-img {
@@ -426,6 +427,49 @@ p {
 .information-link:active {
   color: #364fc7;
 }
+
+/* FEATURE */
+.feature {
+  margin-top: 6.4rem;
+  /* padding-top: 5.2rem; */
+}
+
+.feature-icon {
+  color: #364fc7;
+  height: 3.2rem;
+  width: 3.2rem;
+  margin-bottom: 3.2rem;
+  /* background-color: #d0ebff; */
+  /* background-color: #a5d8ff; */
+  background-color: #e9ecef;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.feature-read-more:link,
+.feature-read-more:visited {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.feature-read-more:hover,
+.feature-read-more:active {
+  /* cursor: pointer; */
+  text-decoration: underline;
+}
+
 /**************************/
 /* CTA SECTION*/
 /**************************/
