@@ -7,6 +7,8 @@
   background-color: #a5d8ff;
   /* padding: 0 4.8rem; */
   height: 100vh;
+  /* height: 50vh; */
+  /* height: 100%; */
   background-image: linear-gradient(
       rgba(34, 34, 34, 0.7),
       rgba(34, 34, 34, 0.7)
@@ -14,7 +16,8 @@
     url(sma-img-1.jpg);
 
   background-size: cover;
-  background-position: 90% 0;
+  background-position: 90% 5%;
+  /* background-position: 10% 30%; */
 }
 
 h1 {
@@ -31,7 +34,7 @@ p {
 
 .logo {
   width: 100%;
-  padding-top: 3rem;
+  padding-top: 4rem;
 }
 
 .head {
@@ -42,10 +45,11 @@ p {
 .text-description {
   font-size: 1.8rem;
   line-height: 1.6;
-  margin-bottom: 4.8rem;
+  margin-bottom: 4.4rem;
   align-items: center;
   color: #fff;
-  padding-top: 4.8rem;
+  /* padding-top: 4.8rem; */
+  padding-top: 3.2rem;
   font-weight: 400;
 }
 
@@ -60,14 +64,23 @@ p {
 }
 
 .school-description {
-  display: flex;
-  gap: 9.6rem;
+  /* display: flex; */
+  /* gap: 9.6rem; */
   box-shadow: 0 2.4rem 2.4rem 0 rgba(0, 0, 0, 0.36);
   border-radius: 11px;
-  background-color: rgba(0, 0, 0, 0.637);
+  /* background-color: rgba(0, 0, 0, 0.637); */
+  background-color: rgba(0, 0, 0, 0.767);
   align-items: center;
+  /* padding-left: 6rem; */
   justify-content: center;
-  margin: 20rem 40rem;
+  justify-items: center;
+  /* margin: 20rem 40rem; */
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 15rem 45rem;
+  padding: 2rem 10rem;
+  /* gap: 1rem; */
 }
 
 .login {
@@ -117,7 +130,8 @@ p {
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-  background-color: #228be6;
+  /* background-color: #228be6; */
+  background-color: #4263eb;
 }
 
 .icon {
@@ -169,15 +183,16 @@ p {
   width: 100%;
   /* box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.288); */
   /* background: linear-gradient(to right, grey, #ced4da); */
-  padding: 1rem;
+  padding: 0.3rem;
 
   border: thick double grey;
-  transition: all 1.5s;
+  transition: all 0.3s;
 }
 
 .photo-img:hover {
   /* transform: rotate(15deg); */
-  transform: rotate(1turn);
+  /* transform: rotate(1turn); */
+  transform: scale(1.2);
 }
 
 /**************************/
@@ -192,12 +207,13 @@ p {
   border: 12px;
   border-radius: 11px;
   overflow: hidden;
-  transition: all 1s;
+  /* transition: all 1s; */
 }
 
+/* 
 .profil:hover {
   transform: translateY(-3rem);
-}
+} */
 
 .profil-title {
   font-size: 4rem;
@@ -219,7 +235,6 @@ p {
   font-size: 1.6rem;
   line-height: 1.8;
   color: #333;
-  /* text-align: center; */
   padding: 2.4rem 4rem;
   /* padding: 3rem 4rem; */
 }
@@ -327,7 +342,7 @@ p {
 .dots {
   position: absolute;
   left: 50%;
-  bottom: -200rem;
+  bottom: -210rem;
   transform: translate(-50%, 3.2rem);
   display: flex;
   gap: 1.2rem;
@@ -351,6 +366,10 @@ p {
 .read-more {
   font-size: 1.6rem;
   text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
 }
 
 /**************************/
@@ -380,7 +399,8 @@ p {
 }
 
 .info-img {
-  width: 40vh;
+  /* width: 40vh; */
+  width: 100%;
   background: linear-gradient(to right, #868e96, #ced4da);
   padding: 1rem;
   transition: all 0.3s;
@@ -596,7 +616,7 @@ p {
 
 .contacts {
   display: flex;
-  gap: 2rem;
+  /* gap: 2rem; */
   padding-top: 1.6rem;
 }
 

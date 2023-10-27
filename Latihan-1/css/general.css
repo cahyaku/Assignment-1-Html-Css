@@ -91,7 +91,8 @@ body {
 
 .btn--full:hover,
 .btn--full:active {
-  background-color: #228be6;
+  /* background-color: #228be6; */
+  background-color: #4263eb;
 }
 
 .btn--outline:link,
