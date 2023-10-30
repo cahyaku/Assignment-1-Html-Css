@@ -8,17 +8,21 @@
     margin: 0 auto;
   }
 
+  html {
+    font-size: 56.25%;
+  }
+
   .heading-primary {
     font-size: 4.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+    margin-top: 9.6rem;
   }
 
   .header {
-    background-position: 10% 25%;
-  }
-
-  .heading-primary {
-    font-size: 4.4rem;
-    /* margin-top: 9.6rem; */
+    background-position: center;
   }
 
   .text-description {
@@ -32,8 +36,8 @@
   }
 
   .logo {
-    height: 50%;
-    padding: 4rem;
+    width: 100%;
+    padding: 1rem;
   }
 
   /* PROFIL */
@@ -51,7 +55,15 @@
   }
 
   .dots {
-    bottom: -210;
+    bottom: -418%;
+  }
+
+  .gallery {
+    margin-top: 9.6rem;
+  }
+
+  .head-title-box {
+    margin: 15rem 40rem;
   }
 }
 
@@ -60,9 +72,10 @@
 /**************************/
 @media (max-width: 75em) {
   .container {
-    max-width: 1200px;
-    padding: 0 3.2rem;
-    margin: 0 auto;
+    /* max-width: 1200px; */
+    max-width: 1440px;
+    /* padding: 0 3.2rem;
+    margin: 0 auto; */
   }
 
   html {
@@ -81,7 +94,8 @@
   }
 
   .header {
-    padding: 0 3.2rem;
+    /* padding: 0 3.2rem; */
+    background-position: center;
   }
 
   .main-nav-list {
@@ -110,12 +124,11 @@
   }
 
   .logo {
-    width: 81%;
+    width: 80%;
     padding: 1rem;
   }
 
   .school-description {
-    /* margin: 10rem; */
     gap: 1rem;
     margin: 12rem 20rem;
   }
@@ -148,6 +161,15 @@
     padding: 0 3.2rem;
   }
 
+  .gallery {
+    margin-top: 9.6rem;
+  }
+
+  /* NEWS */
+  .dots {
+    bottom: -420%;
+  }
+
   /* INFORMATION */
   .info-img {
     width: 100%;
@@ -161,7 +183,259 @@
    59*16 = 994px
 */
 @media (max-width: 59em) {
+  .container {
+    max-width: 960px;
+  }
+
   html {
     font-size: 50%;
+  }
+
+  .header {
+    background-position: center;
+  }
+  .logo {
+    width: 60%;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 9.6rem;
+  }
+
+  .dots {
+    bottom: -453%;
+  }
+
+  .box-img {
+    width: 100%;
+  }
+
+  /* MOBILE NAVIGATION */
+  /* Untuk menampilkan tombol menu (navigation) ketika halaman diperkecil (mobile rasio) */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    -wabkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* ini akan membuat element membentang dari atas ke-bawah */
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+
+    /* 2). Membuatnya tidak bisa diaksess oleh mouse atau keyboard  */
+    pointer-events: none;
+
+    /* 3). Menyembunyikan dari pembaca layar */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    /* ini agar navigation kembali muncul */
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    /* ini agar yang tampil hanya icon close setelah membuka icon menu  */
+    display: none;
+  }
+
+  /* mengubah nav list menjadi bentuk kolom */
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+    color: #333;
+  }
+}
+
+/**************************/
+/* BELOW 704px(Smaller Tablets)*/
+/**************************/
+/* 700/16 =  44
+    44*16 = 704px
+*/
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sejarah {
+    grid-column: 1/-1;
+    /* justify-self: center; */
+  }
+
+  /* PROFIL */
+  .box {
+    /* display: flex; */
+    /* flex-direction: column; */
+    grid-template-columns: 1fr;
+  }
+
+  .box-img {
+    width: 70%;
+    justify-self: center;
+    padding-bottom: 1.5rem;
+  }
+
+  /* INFORMATION */
+  .info-img {
+    width: 100%;
+  }
+
+  .information-box {
+    grid-template-columns: 1.5fr 3fr;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 2;
+  }
+
+  .nav-col {
+    grid-row: 2;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+
+  .information-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .information-img {
+    width: 50%;
+    border: none;
+    align-self: center;
+    padding-top: 2rem;
+  }
+
+  .information-link {
+    justify-self: center;
+  }
+
+  /* NEWS */
+  .news {
+    flex-direction: column;
+  }
+
+  .news-title {
+    margin-top: 3rem;
+    border: none;
+  }
+
+  /* GALLERY */
+  .gallery-img-box {
+    height: 30rem;
+    width: 100%;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 9.6rem;
+  }
+
+  .gallery-item {
+    border: 2mm ridge #ced4da;
+  }
+}
+
+/**************************/
+/* BELOW 544px(Phones)*/
+/**************************/
+/* 550/16 = 34
+   34*16 = 544px
+*/
+@media (max-width: 34rem) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .school-description {
+    flex-direction: column;
+    margin: 1rem 10rem;
+  }
+
+  .text-description {
+    padding: 1.8rem;
+  }
+
+  .logo {
+    width: 50%;
+    padding-top: 0;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .gallery-item {
+    border: 1.5mm ridge #ced4da;
+  }
+
+  .grid--footer {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+
+  .nav-col {
+    grid-row: 2;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+
+  .btn--left {
+    left: 2%;
+    bottom: -860%;
+  }
+
+  .btn--right {
+    right: 2%;
+    bottom: -860%;
   }
 }

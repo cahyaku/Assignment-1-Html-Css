@@ -18,6 +18,12 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
 
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -48,6 +54,12 @@
         </ul>
       </nav>
 
+      <!-- Ini untuk mengatur tampilan mobile -->
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+
       <div class="school-description">
         <a href="#">
           <img class="logo" alt="SMA logo" src="img/logo-sma-1-01.svg" />
@@ -69,7 +81,9 @@
               >sman1Baturiti.sch.id</a
             >
           </p>
-          <a href="login.html" class="login btn btn--full">Login Member</a>
+          <a href="login.html" class="login btn btn--full margin-right-sm"
+            >Login Member</a
+          >
           <a href="#smerti-info" class="btn btn--outline">Informasi &rarr;</a>
         </div>
       </div>
@@ -80,7 +94,7 @@
       <section class="container section-profil" id="profil-sekolah">
         <h2 class="profil-title center-text">Profil SMA Negeri 1 Baturiti</h2>
 
-        <div class="grid grid--3-cols">
+        <div class="container grid grid--3-cols margin-bottom-md">
           <div class="profil">
             <img
               class="profil-img"
@@ -128,7 +142,7 @@
             </p>
           </div>
 
-          <div class="profil">
+          <div class="profil sejarah">
             <img
               class="profil-img"
               src="img/sma-img-9.jpg"
@@ -411,7 +425,7 @@
           </div>
         </div>
 
-        <div class="container grid grid--3-cols">
+        <div class="container grid grid--4-cols">
           <!-- FEATURE 1 -->
           <div class="feature">
             <ion-icon class="feature-icon" name="school-outline"></ion-icon>
@@ -446,13 +460,13 @@
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Praesentium harum alias labore nisi ea? Est officia nulla
               voluptates quisquam, illo doloremque! Exercitationem laudantium ad
-              quis quae culpa!...<br />
+              quis!...<br />
               <a class="feature-read-more" href="#">Selengkapnya</a>
             </p>
           </div>
 
           <!-- FEATURE 4-->
-          <!-- <div class="feature">
+          <div class="feature">
             <ion-icon
               class="feature-icon"
               name="information-circle-outline"
@@ -462,10 +476,10 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
               numquam soluta consequuntur fuga nihil libero magnam, voluptas ex
               quasi quibusdam neque necessitatibus itaque nemo assumenda atque
-              similique eos deserunt consectetur...<br />
+              similique eos...<br />
               <a class="feature-read-more" href="#">Selengkapnya</a>
             </p>
-          </div> -->
+          </div>
         </div>
       </section>
     </main>
