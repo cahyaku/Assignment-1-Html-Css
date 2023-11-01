@@ -274,7 +274,8 @@ p {
 
 .news {
   /* width: 80rem; */
-  margin: 1rem auto;
+  /* margin: 1rem auto; */
+  margin: 2rem 2rem;
   background-color: #e9ecef;
   /* padding: 3.2rem 4.8rem 3.2rem 8.6rem; */
   padding: 4.8rem 1.8rem 4.8rem 1.8rem;
@@ -407,7 +408,7 @@ p {
 
 .information-img {
   border-right: 0.2rem dashed rgb(134, 142, 150);
-  padding-right: 1rem;
+  /* padding-right: 1rem; */
   overflow: hidden;
 }
 
@@ -635,9 +636,14 @@ p {
   line-height: 1.6rem;
 }
 
-.contacts-icon {
+/* .contacts-icon {
   color: #fff;
   padding-bottom: 2rem;
+  font-size: 1.8rem;
+} */
+
+.contacts-icon {
+  color: #fff;
   font-size: 1.8rem;
 }
 

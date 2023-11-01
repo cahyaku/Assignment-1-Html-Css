@@ -440,10 +440,8 @@
     margin-top: 9.6rem;
   }
 
-  .gallery-i .container {
+  .gallery-item .container {
     max-width: 540px;
-  }
-  tem {
     border: 2mm ridge #ced4da;
   }
 }
@@ -460,7 +458,8 @@
   } */
 
   html {
-    font-size: 56.25%;
+    /* font-size: 60%; */
+    font-size: 58%;
   }
 
   .grid {
@@ -523,10 +522,6 @@
     margin-bottom: 7rem;
   }
 
-  /* .school-description {
-    align-self: center;
-  } */
-
   .gallery {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.2rem;
@@ -534,6 +529,10 @@
 
   .gallery-item {
     border: 1.5mm ridge #ced4da;
+  }
+
+  .header-gallery {
+    padding: 0 1rem;
   }
 
   .grid--footer {
@@ -544,13 +543,10 @@
     align-items: start;
   }
 
-  /* .footer-text {
-    margin: none;
-  } */
-
   .social-links {
     margin-bottom: 0;
   }
+
   .logo-col,
   .address-col {
     grid-column: span 1;
@@ -569,51 +565,65 @@
 
   .btn--left {
     left: 2%;
-    bottom: -365%;
+    bottom: -410%;
   }
 
   .btn--right {
     right: 2%;
-    bottom: -365%;
+    bottom: -410%;
   }
 
   .dots {
     /* bottom: -402%; */
-    bottom: -365%;
+    bottom: -480%;
+  }
+
+  .news {
+    border: 2mm ridge #ced4da;
   }
 
   .head-title-box {
     margin: 15rem 8rem;
     /* margin: 10rem 10rem; */
   }
-  /* 
-  .smerti-logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  } */
 
   .logo-col,
-  .acount,
   .address-col,
-  .nav-col,
-  .social-links {
+  .acount,
+  .nav-col {
     display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
   }
 
-  /* .contacts {
-
-  } */
-
-  /* .contacts,
-  .acount {
-    text-align: center;
-  } */
+  .social-links {
+    justify-content: center;
+  }
 
   .footer-heading {
     text-align: center;
+  }
+
+  .information-img {
+    display: block;
+    width: 80%;
+  }
+
+  /* visi -misi */
+  .box-img {
+    display: block;
+    width: 100%;
+    margin-bottom: 3.2rem;
+  }
+
+  .icon-search {
+    color: #333;
+    font-size: 5rem;
+  }
+
+  /* LOGIN */
+  .cta-box {
+    margin: 3rem 4rem;
   }
 }
