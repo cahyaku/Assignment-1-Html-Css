@@ -225,13 +225,12 @@
 
   .main-nav {
     background-color: rgba(255, 255, 255, 0.9);
-    -wabkit-backdrop-filter: blur(5px);
+    /* -wabkit-backdrop-filter: blur(5px); */
     backdrop-filter: blur(10px);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    /* ini akan membuat element membentang dari atas ke-bawah */
     height: 100vh;
     /* transform: translateX(100%); */
 
@@ -246,6 +245,7 @@
 
     /* 3). Menyembunyikan dari pembaca layar */
     visibility: hidden;
+    backdrop-filter: blur(10px);
   }
 
   .nav-open .main-nav {
@@ -253,7 +253,7 @@
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
-    /* transform: translateX(0); */
+    transform: translateX(0);
   }
 
   .nav-open .icon-mobile-nav[name="close-outline"] {
@@ -625,5 +625,10 @@
   /* LOGIN */
   .cta-box {
     margin: 3rem 4rem;
+  }
+
+  /* NEWS */
+  .text-1 {
+    display: none;
   }
 }

@@ -18,6 +18,7 @@
   background-size: cover;
   background-position: 90% 5%;
   /* background-position: 10% 30%; */
+  /* z-index: 999; */
 }
 
 h1 {
@@ -92,6 +93,7 @@ p {
 .main-nav {
   padding: 3rem;
   border-bottom: 0.1rem solid #ffffff50;
+  z-index: 999;
 }
 
 .main-nav-list {
